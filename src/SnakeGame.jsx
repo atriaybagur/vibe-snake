@@ -266,6 +266,16 @@ export default function SnakeGame() {
             </div>
           </div>
 
+          {/* Add arrow buttons for mobile controls */}
+          <div className="flex justify-center gap-4 mt-4">
+            <Button onClick={() => changeDir("ArrowUp")} className="rounded-2xl">⬆️</Button>
+          </div>
+          <div className="flex justify-center gap-4">
+            <Button onClick={() => changeDir("ArrowLeft")} className="rounded-2xl">⬅️</Button>
+            <Button onClick={() => changeDir("ArrowDown")} className="rounded-2xl">⬇️</Button>
+            <Button onClick={() => changeDir("ArrowRight")} className="rounded-2xl">➡️</Button>
+          </div>
+
           <p className="text-xs opacity-70">Controls: Arrow Keys • Space/Enter to Pause • R to Restart • Swipe on mobile</p>
         </div>
 
